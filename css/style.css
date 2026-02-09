@@ -7,7 +7,8 @@
     --color-text: #333333;
     --color-text-light: #666666;
     --color-whatsapp: #25D366;
-    --color-badge-bg: #fadadd;
+    --color-badge-bg: #dbeafe;
+    /* Light blue based on primary */
 
     --font-main: 'Outfit', sans-serif;
 
@@ -475,8 +476,7 @@ img {
 
 .social-link:hover {
     color: var(--color-white);
-    background-color: #E1306C;
-    /* Instagram Color */
+    background-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
