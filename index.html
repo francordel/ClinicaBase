@@ -180,47 +180,68 @@
 
         <section id="testimonios" class="section testimonials">
             <div class="container">
-                <div class="section__header" style="text-align: center; margin-bottom: 4rem;">
-                    <span class="badge">TESTIMONIOS</span>
-                    <h2 class="section__title">Lo que dicen nuestros pacientes</h2>
+                <div class="section__header" style="text-align: center; margin-bottom: 3rem;">
+                    <img src="assets/images/google-reviews-logo.png" alt="Google Reseñas"
+                        style="max-width: 200px; height: auto;">
+                    <!-- <h2 class="section__title" style="margin-top: 1rem;">Lo que dicen nuestros pacientes</h2> -->
                 </div>
 
-                <div class="testimonials__grid">
-                    <article class="testimonial-card">
-                        <p class="testimonial-card__quote">"Después de mi lesión de cruzado, Fran me ayudó a volver a
-                            competir en tiempo récord. Profesionales de primer nivel."</p>
-                        <div class="testimonial-card__author">
-                            <h4 class="testimonial-card__name">Carlos M.</h4>
-                            <p class="testimonial-card__role">Futbolista amateur</p>
+                <div class="testimonials__grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <!-- Review 1 -->
+                    <article class="google-review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" style="background-color: #7B1FA2;">C</div>
+                            <div class="review-info">
+                                <h4 class="review-name">Carlos M.</h4>
+                                <span class="review-meta">hace un mes</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                class="google-icon-small" alt="Google">
                         </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">Después de mi lesión de cruzado, Fran me ayudó a volver a competir en
+                            tiempo récord. Profesionales de primer nivel.</p>
                     </article>
 
-                    <article class="testimonial-card">
-                        <p class="testimonial-card__quote">"Guille es un crack. Llevaba meses con dolor de rodilla y en
-                            pocas sesiones noté una mejora increíble."</p>
-                        <div class="testimonial-card__author">
-                            <h4 class="testimonial-card__name">María L.</h4>
-                            <p class="testimonial-card__role">Corredora</p>
+                    <!-- Review 2 -->
+                    <article class="google-review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" style="background-color: #D32F2F;">M</div>
+                            <div class="review-info">
+                                <h4 class="review-name">María L.</h4>
+                                <span class="review-meta">hace 3 semanas</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                class="google-icon-small" alt="Google">
                         </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">Guille es un crack. Llevaba meses con dolor de rodilla y en pocas
+                            sesiones noté una mejora increíble.</p>
                     </article>
 
-                    <article class="testimonial-card">
-                        <p class="testimonial-card__quote">"El mejor equipo de fisioterapia de Murcia. Trato cercano y
-                            resultados profesionales."</p>
-                        <div class="testimonial-card__author">
-                            <h4 class="testimonial-card__name">Javier R.</h4>
-                            <p class="testimonial-card__role">Ciclista</p>
+                    <!-- Review 3 -->
+                    <article class="google-review-card">
+                        <div class="review-header">
+                            <div class="review-avatar" style="background-color: #1976D2;">J</div>
+                            <div class="review-info">
+                                <h4 class="review-name">Javier R.</h4>
+                                <span class="review-meta">hace 2 meses</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                class="google-icon-small" alt="Google">
                         </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">El mejor equipo de fisioterapia de Murcia. Trato cercano y resultados
+                            profesionales.</p>
                     </article>
                 </div>
 
                 <div class="testimonials__actions" style="text-align: center; margin-top: 3rem;">
                     <a href="https://www.google.com/search?q=Clínica+Base+Fisioterapia+Murcia" target="_blank"
-                        class="btn btn--primary">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 5px;">
-                            <path
-                                d="M21.99 12.88c.08-.58.1-1.17.1-1.78 0-4.9-3.4-8.86-7.88-8.86-4.9 0-8.86 3.96-8.86 8.86 0 4.9 3.96 8.86 8.86 8.86 2.3 0 4.49-1 6.07-2.67l-2.07-2.08c-.76.9-2.2 1.9-4 1.9-2.7 0-4.9-2.2-4.9-4.9 0-2.7 2.2-4.9 4.9-4.9 1.48 0 2.7.6 3.5 1.4l.2.2 2.3-2.3C18.7 4.9 16.5 4 14.21 4 9.69 4 6 7.69 6 12.2s3.69 8.2 8.21 8.2c6.2 0 10-4.3 10-9.8 0-.5 0-.9-.2-1.72h-9.8v3.4h5.68z" />
-                        </svg>
+                        class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="https://hackaday.com/wp-content/uploads/2016/08/google-g-logo.png" alt="Google G"
+                            width="24" height="24" style="background: white; border-radius: 50%; padding: 2px;">
                         Dejar una reseña en Google
                     </a>
                 </div>
