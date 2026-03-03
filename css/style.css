@@ -666,11 +666,14 @@ img {
     .hero {
         align-items: flex-end;
         padding-bottom: 6rem;
+        height: 80vh;
+        /* Reduces height to "zoom out" horizontally */
+        min-height: 500px;
     }
 
     .hero__bg {
-        background-position: 70% center;
-        /* Shifts focus to the right to see both faces */
+        background-position: 60% top;
+        /* Better balance between the two faces */
     }
 
     .hero__title {
