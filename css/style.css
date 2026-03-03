@@ -665,7 +665,7 @@ img {
 
     .hero {
         align-items: flex-end;
-        padding-bottom: 6rem;
+        padding-bottom: 2rem;
         height: 80vh;
         /* Reduces height to "zoom out" horizontally */
         min-height: 500px;
