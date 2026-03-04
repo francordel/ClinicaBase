@@ -693,6 +693,8 @@ img {
         height: 80vh;
         /* Reduces height to "zoom out" horizontally */
         min-height: 500px;
+        margin-top: 80px;
+        /* Bumps the whole hero down below the white header */
     }
 
     .hero__bg {
