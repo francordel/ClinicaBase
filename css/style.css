@@ -153,6 +153,7 @@ img {
     align-items: center;
     position: relative;
     /* For absolute centering of logo */
+    min-height: 60px;
 }
 
 .logo {
