@@ -2,7 +2,8 @@
     --color-primary: #0755be;
     --color-secondary: #4995ff;
     --color-dark: #1a1a1a;
-    --color-light: #f6f6f6;
+    --color-light: #f0f4f8;
+    /* Cooler, more corporate background */
     --color-white: #ffffff;
     --color-text: #333333;
     --color-text-light: #666666;
@@ -150,14 +151,28 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    /* For absolute centering of logo */
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1005;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    height: 70px;
+    /* Larger for PC */
+    transition: var(--transition);
+}
+
+.nav {
+    margin-left: auto;
+    /* Push to right when logo is absolute */
 }
 
 .nav__list {
@@ -374,7 +389,8 @@ img {
 
 /* Testimonials */
 .testimonials {
-    background-color: #fffbf5;
+    background-color: #eaf0f6;
+    /* More corporate light blue/grey instead of warm yellowish */
 }
 
 .testimonials__grid {
@@ -620,6 +636,8 @@ img {
     .nav-toggle {
         display: block;
         z-index: 1001;
+        margin-left: auto;
+        /* Push to right when logo is absolute */
     }
 
     .hamburger {
@@ -661,6 +679,11 @@ img {
     .nav-toggle.active .hamburger::after {
         transform: rotate(-45deg);
         top: 0;
+    }
+
+    .header__logo-img {
+        height: 60px;
+        /* Larger for mobile than the previous 40px */
     }
 
     .hero {
