@@ -207,7 +207,7 @@ img {
     align-items: center;
     color: var(--color-white);
     margin-top: -70px;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 .hero__bg {
@@ -712,5 +712,12 @@ img {
 
     .btn {
         width: 100%;
+    }
+
+    .team__grid,
+    .testimonials__grid,
+    .services__grid {
+        grid-template-columns: 1fr;
+        /* Stacks cards evenly and centers them on mobile */
     }
 }
