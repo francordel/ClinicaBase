@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
@@ -56,5 +56,23 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         observer.observe(el);
+    });
+
+    // Leer más / Leer menos functionality for Team Bios
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const bioLong = button.previousElementSibling; // span.bio-long
+            const bioDots = bioLong.previousElementSibling; // span.bio-dots
+
+            if (bioLong.style.display === 'none' || bioLong.style.display === '') {
+                bioLong.style.display = 'inline';
+                bioDots.style.display = 'none';
+                button.textContent = ' Leer menos';
+            } else {
+                bioLong.style.display = 'none';
+                bioDots.style.display = 'inline';
+                button.textContent = ' Leer más';
+            }
+        });
     });
 });
