@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/franciscojosecortesdelgado/Documents/GitHub/ClinicaBase log --oneline -15)"
+    ]
+  }
+}
