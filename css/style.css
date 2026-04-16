@@ -282,7 +282,7 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.2;
     filter: blur(3px);
     z-index: 0;
 }
@@ -435,8 +435,29 @@ img {
 
 /* Testimonials */
 .testimonials {
+    position: relative;
     background-color: #eaf0f6;
-    /* More corporate light blue/grey instead of warm yellowish */
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/ClinicaBase_logo_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.testimonials > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .testimonials__grid {
