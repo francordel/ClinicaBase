@@ -12,4 +12,12 @@
         <loc>https://clinicabase.es/politica-cookies</loc>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://clinicabase.es/aviso-legal</loc>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://clinicabase.es/politica-privacidad</loc>
+        <priority>0.3</priority>
+    </url>
 </urlset>

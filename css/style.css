@@ -941,6 +941,7 @@ img {
 .legal__content a {
     color: var(--color-primary);
     text-decoration: underline;
+    overflow-wrap: anywhere;
 }
 
 .legal__table-wrapper {
