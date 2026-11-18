@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('../assets/fonts/outfit-latin.woff2') format('woff2');
+}
+
 :root {
     --color-primary: #0755be;
     --color-secondary: #4995ff;
@@ -785,5 +793,202 @@ img {
     .services__grid {
         grid-template-columns: 1fr;
         /* Stacks cards evenly and centers them on mobile */
+    }
+}
+
+/* Footer legal links */
+.footer__legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.footer__legal a,
+.footer__cookie-btn {
+    color: var(--color-white);
+    opacity: 0.85;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.footer__legal a:hover,
+.footer__cookie-btn:hover {
+    opacity: 1;
+}
+
+/* Cookie banner */
+.cookie-banner {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 2000;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cookie-banner__text {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.cookie-banner__text strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-dark);
+}
+
+.cookie-banner__text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.cookie-banner__actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Aceptar y Rechazar tienen el mismo peso visual */
+.cookie-banner__btn {
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    font-weight: 600;
+    min-width: 120px;
+    padding: 0.7rem 1.25rem;
+    border-radius: 50px;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.cookie-banner__btn:hover {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+}
+
+/* Map consent placeholder */
+.map-consent {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.map-consent p {
+    margin-bottom: 1rem;
+}
+
+/* Legal pages */
+.legal {
+    padding: 140px 0 var(--spacing-lg);
+}
+
+.legal__content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.legal__content h1 {
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin-bottom: 0.5rem;
+}
+
+.legal__updated {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.legal__content h2 {
+    font-size: 1.25rem;
+    color: var(--color-dark);
+    margin: 2rem 0 0.75rem;
+}
+
+.legal__content p,
+.legal__content ul {
+    margin-bottom: 1rem;
+}
+
+.legal__content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.legal__content a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.legal__table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.legal__content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.legal__content th,
+.legal__content td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #dde3ea;
+    vertical-align: top;
+}
+
+.legal__content th {
+    background-color: var(--color-light);
+}
+
+.pendiente {
+    background-color: #fff3a3;
+    padding: 0 0.25rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .cookie-banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .cookie-banner__actions {
+        width: 100%;
+    }
+
+    .cookie-banner__btn {
+        flex: 1;
+        width: auto;
+    }
+
+    .legal__content {
+        padding: 1.5rem;
     }
 }

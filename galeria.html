@@ -2,16 +2,6 @@
 <html lang="es">
 
 <head>
-    <!-- Google Analytics (GA4) -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNHDDGL425"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-JNHDDGL425');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Clínica Base Fisioterapia</title>
@@ -19,10 +9,8 @@
         content="Galería de imágenes de Clínica Base, nuestros profesionales Fran y Guille, y nuestras instalaciones.">
 
     <link rel="icon" type="image/svg+xml" href="assets/images/symbol.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="preload" href="assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 
 <body>
@@ -114,11 +102,16 @@
                     </svg>
                 </a>
             </div>
+            <nav class="footer__legal" aria-label="Información legal">
+                <a href="politica-cookies.html">Política de cookies</a>
+                <button type="button" class="footer__cookie-btn" data-cookie-settings>Configurar cookies</button>
+            </nav>
             <p>&copy; 2026 Clínica Base. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/cookies.js?v=1"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 
 </html>

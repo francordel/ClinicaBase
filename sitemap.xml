@@ -8,4 +8,8 @@
         <loc>https://clinicabase.es/galeria</loc>
         <priority>0.6</priority>
     </url>
+    <url>
+        <loc>https://clinicabase.es/politica-cookies</loc>
+        <priority>0.3</priority>
+    </url>
 </urlset>
